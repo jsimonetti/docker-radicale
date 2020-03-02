@@ -9,15 +9,14 @@ RUN apk add --no-cache --virtual=build-dependencies \
         libffi-dev \
         musl-dev \
         python3-dev \
-        py3-pip \
     && apk add --no-cache \
         curl \
         git \
         python3 \
         shadow \
         su-exec \
+        py3-pip \
     && python3 -m pip install --upgrade pip \
-    && python3 -m pip install --upgrade setuptools \
     && python3 -m pip install radicale==$VERSION passlib[bcrypt] \
     && python3 -m pip install --upgrade git+https://github.com/Unrud/RadicaleInfCloud \
     && python3 -m pip install --upgrade git+https://github.com/Unrud/RadicaleIMAP \
