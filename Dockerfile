@@ -9,6 +9,7 @@ RUN apk add --no-cache --virtual=build-dependencies \
         libffi-dev \
         musl-dev \
         python3-dev \
+        py3-pip \
     && apk add --no-cache \
         curl \
         git \
