@@ -1,6 +1,6 @@
 FROM jsimonetti/alpine-edge:latest
 
-ARG VERSION=2.1.11
+ARG VERSION=3.0.4
 ARG UID=2999
 ARG GID=2999
 
